@@ -10,5 +10,5 @@
 
 El .sh lo modifique, le agregue la importación, con crear la base de datos y ejecutar el sh ya tenemos los datos del .csv en la db.
 
-Para ver la información se puede ver por /api/superheros ... se le agrego filtro por fullName,publisher o race.
+Para ver la información se puede ver por `/api/superheros` ... se le agrego filtro por fullName,publisher o race.
 Ordena por id y fullName. Y también esta paginado. Todos los filtros se envían por GET
