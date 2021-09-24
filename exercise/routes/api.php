@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/superheros', 'SuperherosController@index');
+Route::get('/superheros', 'SuperherosController@index'); // muesta api
 Route::get('/import', 'SuperherosController@import');

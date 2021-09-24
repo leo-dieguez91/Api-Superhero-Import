@@ -27,9 +27,11 @@ class SuperherosImport implements ToModel,WithStartRow
     public function model(array $row)
     {
         $service = new Service();
+        // verifica si ya existe publisher y race, si no existe lo crea en la db y en ambos casos devuelve el id
         $publisherId = $service->publisher($row[15]);
         $raceId = $service->race($row[8]);
-
+        
+        // normaliza las medidas para insertar en la tabla un integer
         $height_in = $service->normalizeInt($row[9]);
         $height_cm = $service->normalizeInt($row[10]);
         $weight_lb = $service->normalizeInt($row[11]);
